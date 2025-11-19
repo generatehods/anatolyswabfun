@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YeyeSwap — Solana DEX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>YeyeSwap — Mainnet</h2>
+
+    <button id="connectBtn" class="btn">Connect Wallet</button>
+    <div id="walletAddress" class="muted">Not connected</div>
+
+    <div class="section">
+      <div class="label">Balance</div>
+      <div id="balanceSOL">SOL: 0</div>
+      <div id="balanceToken">Token: 0</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Token Mint</div>
+      <input id="tokenMint" placeholder="Paste token mint here" />
+      <button id="detectBtn" class="btn secondary">Detect Token</button>
+      <div id="tokenInfo"></div>
+    </div>
+
+    <div class="section">
+      <div class="label">Amount</div>
+      <input id="amount" placeholder="Amount" />
+      <button id="swapBtn" class="btn primary">Swap via Jupiter</button>
+      <div id="status"></div>
+    </div>
+
+  </div>
+
+  <script type="module" src="./web.js"></script>
+</body>
+        </html>
